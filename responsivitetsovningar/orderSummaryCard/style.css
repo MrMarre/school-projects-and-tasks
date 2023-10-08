@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --larger-font-weight: 800;
+  --smaller-font-weight: 500;
+  --main-font-family: "Encode Sans", sans-serif;
+  --main-color: rgb(65, 47, 255);
+  --p-color: #9d9d9d; /*  #c9d1d9 */
+}
+/* följande kod för in font på valt utrymme
+font-family: var(--main-font-family); */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #eeeeee;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 15rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.card {
+  width: 15rem;
+  height: 25rem;
+}
+
+.card-image {
+  background-color: var(--main-color);
+  background-image: url(./assets/header-image.svg);
+  background-size: 11rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 33%;
+  width: 15rem;
+}
+
+h2,
+h3 {
+  font-weight: var(--larger-font-weight);
+  font-family: var(--main-font-family);
+}
+article p {
+  color: var(--p-color);
+}
+h2 {
+  font-size: 1.1rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.card-container p {
+  padding-bottom: 1rem;
+}
+
+p,
+a,
+button {
+  font-weight: var(--smaller-font-weight);
+  font-family: var(--main-font-family);
+  line-height: 1.25rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* kanske behövs */
+}
+
+.subscription-box {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+}
+.subscription-box p {
+  color: #9d9d9d;
+}
+
+.subscription-box img {
+  padding: 0.25rem;
+}
+.vertical-align h3 {
+  font-size: 0.75rem;
+}
+
+button {
+  background-color: var(--main-color);
+  width: 80%;
+  padding: 0.5rem 0 0.5rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  color: #f7f7ff;
+}
+.cancel {
+  text-decoration: none;
+  color: var(--p-color);
+  position: relative;
+  top: 0.5rem;
+}

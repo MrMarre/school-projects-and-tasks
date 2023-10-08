@@ -1,0 +1,29 @@
+body {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  color: brown;
+}
+
+p {
+  color: rgb(0, 21, 255);
+  font-size: 18px;
+}
+
+h3 {
+  font-weight: 700;
+
+  /* Markera allt, sedan shift + alt + A!!!
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+}
+
+.item {
+  width: 10rem;
+  height: auto;
+  background-color: blue;
+  border: solid 1rem black;
+  display: inline-block;
+  padding: 1rem;
+  margin: 0, 5rem;
+}

@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.menu {
+  background-color: rgb(213, 212, 212);
+  padding: 0rem 0 0 0;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 45px;
+  width: auto;
+  padding: 0 0 0 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: end;
+}
+
+.option {
+  background-color: rgb(213, 212, 212);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.option:hover {
+  background-color: grey;
+  transition-duration: 0.8s;
+  color: white;
+}

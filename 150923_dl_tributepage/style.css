@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.08rem;
+}
+/* @media only screen and (max-width: 600px) {
+} */
+
+body {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-image {
+  background-image: url(./assets/texture_background.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.406);
+  background-blend-mode: overlay;
+}
+
+/*Nedan - Översta bild samt tillhörande text*/
+.top-image {
+  background-image: url(./assets/cashier.avif); /*ILLEGAL!!!*/
+  background-size: cover;
+  height: 55vh;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 17rem 0rem 2rem;
+  font-size: 1.12rem;
+  /* overflow: auto; Var snyggt innan media querys*/
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+
+  background-color: rgba(19, 17, 17, 0.868);
+}
+
+h3 {
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+}
+p {
+  text-align: justify;
+}
+
+article {
+  padding: 1.5rem 3rem 0.5rem 3rem;
+}
+
+ol {
+  padding: 1rem 2rem 3rem 2rem;
+}
+li {
+  padding-left: 2.5rem;
+  list-style-position: inside;
+  line-height: 2rem;
+}
+strong {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e61e82, 0 0 40px #e5368d,
+      0 0 50px #e9358f, 0 0 60px #e82084, 0 0 70px #e62786;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6,
+      0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: auto;
+  height: auto;
+  background-color: rgba(30, 27, 27, 0.406);
+  padding: 0.5rem;
+}
+img {
+  height: 160px;
+  width: auto;
+  border-radius: 1.5rem;
+}
+img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .top-image {
+    padding: 1rem 5rem 0rem 2rem;
+    /* overflow: visible; nödvändig med overflow: auto */
+  }
+  img {
+    width: 250px;
+    height: auto;
+    padding-top: 1rem;
+  }
+  .gallery:nth-child(3) {
+    padding-bottom: 1rem;
+  }
+}

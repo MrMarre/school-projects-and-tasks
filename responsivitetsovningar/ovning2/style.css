@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: auto;
+}
+.wrapper {
+  max-width: 425px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+  gap: 0.5rem;
+}
+article {
+  background-color: #b2008a;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mid-section {
+  margin: 0.5rem;
+  background-color: #fd96a9;
+  width: 100%;
+  height: 20vh;
+}
+
+footer {
+  background-color: rgb(8, 206, 8);
+  height: 100px;
+}
+/* Nedan har vi querys */
+@media screen and (min-width: 426px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    height: 25rem;
+    width: 100%;
+  }
+  .mid-section {
+    width: auto;
+    grid-row: span 3;
+    height: auto;
+  }
+  footer {
+    margin: 0.5rem;
+  }
+}

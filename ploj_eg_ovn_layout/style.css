@@ -1,0 +1,50 @@
+* {
+    font-family: sans-serif;
+    border: 1px black;
+}
+
+body {
+    text-align: center;
+    
+}
+
+main {
+    margin: 0; /* Is this needed? */
+    padding: 0; /* Same as above*/
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Samlingsblock för header-footer ---> samt aside's och article */
+header, footer {
+    height: 5rem;
+    text-align: center;
+}
+.aside-left, article, .aside-right {
+    height: 75vh;
+    width: 100%;
+
+}
+/* Samlingsblock för header-footer ---> samt aside's och article */
+header {
+    background-color: blueviolet;
+    height: ;
+}
+
+.aside-left {
+    background-color: aquamarine;
+}
+
+article {
+    background-color: brown;
+}
+
+.aside-right {
+    background-color: aqua;
+}
+
+footer {
+    background-color: blueviolet;
+
+}

@@ -1,0 +1,103 @@
+<!-- I denna övning ska du med hjälp av HTML och CSS koda ihop en hyllningssida till någon person du ser upp till. Det kan vara din mamma, David Guetta eller kungen, vem spelar mindre roll.
+
+Din hyllning ska innehålla följande HTML:
+
+Check! -Semantiska HTML taggar 
+Check! -en bild som anpassar sig till sidan / boxen.
+Check! -en huvudrubrik
+Check! -en eller flera underrubriker
+Check! -lite brödtext om personen ( kan saxas från wikipedia eller annan sida eller lorem)
+Check! en lista med top 3 coolaste sakerna personen gjort
+
+Din hyllning ska stylas så snyggt du kan med hjälp av:
+Check! -elementselektorer ( ex. main eller class)
+Check! -CSS classer
+Check! -fonter från google fonts ( frivilligt)
+Check! -egenskaper du ska styla är fontval, storlekar, färger, marginaler, samt ev. effekter.
+-se till att du ha bra space mellan text och boxkanter, tänk boxmodellen.
+
+Level up
+Check! -Mini galleri
+Visa några fler bilder på personen du hyllar i ett litet galleri längre ner på sidan. --->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@300&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-image">
+    <main>
+      <section class="top-image">
+        <h1>Service Workers</h1>
+        <p>
+          An often overlooked working-class hero who makes everyday life easier
+          and more pleasant for ordinary people
+        </p>
+      </section>
+      <article>
+        <h3>During Covid-19</h3>
+        <p>
+          During the pandemic the service workers remained at work - an utmost
+          vulnerable position with great risk of getting infected with disease.
+          With no possibility to work from home. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quam fuga dolor labore repellendus, quo
+          odit autem? Fugit quis neque maiores voluptas libero soluta, possimus
+          distinctio at, consequuntur incidunt quod quos voluptate pariatur hic
+          accusantium enim voluptatem. Facilis molestiae illum enim!
+        </p>
+      </article>
+      <article>
+        <h3>Under Ordinary Circumstances</h3>
+        <p>
+          Normally, service workers endure multiple challenges while at work.
+          Such as demanding, incomprehensible and unrealistic expectations from
+          both customers and management. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Repellat tempore, laboriosam minus sint hic
+          reiciendis, enim error vel sequi distinctio laudantium temporibus?
+          Fugiat minus, et enim iste deleniti sapiente! Error.
+        </p>
+      </article>
+      <article>
+        <h3>Overall Working Enviroment</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          dicta eaque velit asperiores nisi voluptate accusantium. Voluptatibus
+          expedita, enim vel eveniet atque ab possimus minima?
+        </p>
+      </article>
+
+      <section>
+        <h3>Top <u>three</u> generalized strengths of service workers</h3>
+        <ol>
+          <li>
+            An almost inhuman <strong>resistance to stress</strong> and
+            troublesome individuals
+          </li>
+          <li>
+            Natural problem solver to the benefit of both customers and
+            <strong>self-preservation</strong>
+          </li>
+          <li>
+            <strong>A killer smile</strong> that seem to disarm even the most
+            awkward and challenging situations
+          </li>
+        </ol>
+      </section>
+      <h3>Can you relate to any of these when shopping?</h3>
+      <section class="gallery">
+        <img src="./assets/angry-unsplash.jpg" alt="angry man" />
+        <img src="./assets/crazy-unsplash.jpg" alt="metal face" />
+        <img src="./assets/happy-unsplash.jpg" alt="happy customer" />
+      </section>
+    </main>
+  </body>
+</html>

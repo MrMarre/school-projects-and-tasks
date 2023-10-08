@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+}
+
+p {
+  height: 100%;
+  width: 3rem;
+  border: 3px solid black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container:nth-last-child(2) {
+  flex-direction: row-reverse;
+}
+
+p:nth-child(1) {
+  flex-grow: 1;
+  background-color: rgb(113, 2, 2);
+}
+p:nth-child(2) {
+  flex-grow: 1;
+  background-color: rgb(158, 3, 3);
+}
+p:nth-child(3) {
+  flex-grow: 2;
+  background-color: rgb(248, 10, 10);
+}
+p:nth-child(4) {
+  flex-grow: 3;
+  background-color: rgb(1, 79, 1);
+}
+p:nth-child(5) {
+  flex-grow: 5;
+  background-color: green;
+}
+p:nth-child(6) {
+  flex-grow: 8;
+  background-color: greenyellow;
+}
+p:nth-child(7) {
+  flex-grow: 13;
+  background-color: rgb(196, 249, 115);
+}
+p:nth-child(8) {
+  flex-grow: 21;
+  background-color: yellow;
+}
+p:nth-child(9) {
+  flex-grow: 34;
+  background-color: rgb(248, 248, 120);
+}

@@ -1,0 +1,36 @@
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(105, 61, 147, 0.435);
+}
+
+main {
+    padding: 0 25rem 0 25rem;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.second {
+    max-width: 60%;
+    
+    margin: auto;
+}
+.first, .second {
+    margin-left: 20%;
+}
+.ingredienser {
+
+}
+.how-to {
+
+}
+*/
